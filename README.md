@@ -94,7 +94,7 @@ conda install -c conda-forge r-data.table r-optparse r-ggplot2 r-mclust "r-base>
 
 ### 2. Run MixInfect2
 
-This script analyzes multi-strain Mycobacterium tuberculosis infections from VCF files using variant clustering and SNP-based heuristics.
+This script analyzes multi-strain *Mycobacterium tuberculosis* infections from VCF files using variant clustering & SNP-based heuristics.
 
 ```bash
 (r-mixinfect):$ Rscript ~/MixInfect2/MixInfect2.R \
