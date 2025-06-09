@@ -60,8 +60,8 @@ samtools indexed sample bams '**snps.bam**' are available from Snippy run on mul
 ### 2. Run FreeBayes
 
 ```bash
-freebayes -f reference.fasta \
-  -b sample1.bam -b sample2.bam -b sample3.bam \
+freebayes -f AL123456_MTB_H37Rv.fasta \
+  -b TN106985.snps.bam -b TN106727.snps.bam -b TN106925.snps.bam -b TN106439.snps.bam\
   --pooled-discrete \
   --use-best-n-alleles 4 \
   --genotype-qualities \
