@@ -1,0 +1,25 @@
+name: r-mixinfect
+channels:
+  - conda-forge
+  - defaults
+r:
+  - r-base=4.2.*
+  - r-optparse
+  - r-stringr
+  - r-foreach
+  - r-doParallel
+  - r-iterators
+  - r-mclust
+  - r-readr
+  - r-data.table
+dependencies:
+  - r-base=4.2.*
+  - r-optparse
+  - r-stringr
+  - r-foreach
+  - r-doParallel
+  - r-iterators
+  - r-mclust
+  - r-readr
+  - r-data.table
+

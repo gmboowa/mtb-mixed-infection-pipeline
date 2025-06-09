@@ -1,0 +1,23 @@
+name: snippy-env
+channels:
+  - bioconda
+  - conda-forge
+  - defaults
+dependencies:
+  - snippy=4.6.0
+  - bcftools>=1.7
+  - samtools>=1.7
+  - bwa
+  - freebayes
+  - parallel
+  - snpeff
+  - perl
+  - python=3.10
+  - gsl  # for bcftools dynamic linking
+  - seqtk
+  - vt
+  - bedtools
+  - snp-sites
+  - any2fasta
+  - tabix
+  - bgzip
