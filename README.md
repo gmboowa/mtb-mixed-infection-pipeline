@@ -1,6 +1,6 @@
 # mtb-mixed-infection-pipeline
 
-mtb-mixed-infection-pipeline is a reproducible bioinformatics workflow for detecting mixed *Mycobacterium tuberculosis* infections from whole-genome sequencing (WGS) data. It integrates **Snippy**, **FreeBayes** (pooled-discrete mode), and a patched version of **MixInfect2.R** to process raw sequencing reads through alignment, joint variant calling, & statistical analysis. This pipeline outputs multi-sample VCF files with key genotype information suitable for identifying mixed-strain infections.
+mtb-mixed-infection-pipeline is a reproducible bioinformatics workflow for detecting mixed *Mycobacterium tuberculosis* infections from whole-genome sequencing (WGS) data. It integrates **Snippy**, **FreeBayes** (pooled-discrete mode) & a patched version of **MixInfect2.R** to process raw sequencing reads through alignment, joint variant calling, & statistical analysis. This pipeline outputs multi-sample VCF files with key genotype information suitable for identifying mixed-strain infections.
 
 ---
 
