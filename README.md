@@ -7,7 +7,7 @@ mtb-mixed-infection-pipeline is a reproducible bioinformatics workflow for detec
 [![Conda](https://img.shields.io/conda/vn/conda-forge/r-mclust.svg)](https://anaconda.org/conda-forge/r-mclust)
 [![R Version](https://img.shields.io/badge/R-4.0+-blue.svg)](https://cran.r-project.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/yourusername/yourrepo/r-check.yaml?branch=main)
+
 
 ---
 
