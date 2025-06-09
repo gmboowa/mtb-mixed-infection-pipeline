@@ -28,13 +28,16 @@ conda activate snippy-env
 
 ### 2. Run Snippy on multiple samples
 
-#### sample.list.txt
-**Format: SampleID <tab> Forward_Read <tab> Reverse_Read**
+#### `sample.list.txt`
 
+**Format:** `SampleID<TAB>Forward_Read<TAB>Reverse_Read`
+
+```
 TN106985	~/TN106985_1.fastq.gz	~/TN106985_2.fastq.gz
 TN106727	~/TN106727_1.fastq.gz	~/TN106727_2.fastq.gz
 TN106925	~/TN106925_1.fastq.gz	~/TN106925_2.fastq.gz
 TN106439	~/TN106439_1.fastq.gz	~/TN106439_2.fastq.gz
+```
 
 ```bash
 
