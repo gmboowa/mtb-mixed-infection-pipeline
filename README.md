@@ -77,7 +77,7 @@ freebayes -f AL123456_MTB_H37Rv.fasta \
   > multisample.vcf
 ```
 
-Generate an index of the reference genome with
+### 4. Generate an index of the reference genome 
 
  ```bash
 samtools faidx AL123456.fasta
@@ -92,9 +92,6 @@ samtools faidx AL123456.fasta
 ```bash
 conda env create -f r-mixinfect.yaml
 conda activate r-mixinfect
-
-# If needed
-
 conda install -c conda-forge r-data.table r-optparse r-ggplot2 r-mclust "r-base>=4.0" "icu=73.2"
 
 ```
@@ -112,7 +109,7 @@ This script analyzes multi-strain *Mycobacterium tuberculosis* infections from V
   --useFilter FALSE
 ```
 
-### Outputs
+### MixInfect2 outputs
 
 - `output_MixSampleSummary.csv`: Summary of sample classifications.
 - `output_BICvalues.csv`: BIC scores & inferred strain counts.
