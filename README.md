@@ -55,7 +55,7 @@ TN106439	~/TN106439_1.fastq.gz	~/TN106439_2.fastq.gz
 
 samtools index sample1.bam
 samtools index sample2.bam
-...
+
 ```
 
 ### 2. Run FreeBayes
