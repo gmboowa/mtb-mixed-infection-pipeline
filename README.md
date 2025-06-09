@@ -17,7 +17,7 @@ mtb-mixed-infection-pipeline is a reproducible bioinformatics workflow for detec
 
 ---
 
-## Setup
+##  Running Snippy
 
 ### 1. Create conda environment for Snippy
 
@@ -53,8 +53,7 @@ TN106439	~/TN106439_1.fastq.gz	~/TN106439_2.fastq.gz
 
 ```bash
 
-samtools index sample1.bam
-samtools index sample2.bam
+samtools indexed sample bams '**snps.bam**' are available from Snippy run on multiple samples
 
 ```
 
