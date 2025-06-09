@@ -49,7 +49,14 @@ TN106439	~/TN106439_1.fastq.gz	~/TN106439_2.fastq.gz
 
 ## FreeBayes joint-genotyping (pooled-discrete)
 
-### 1. Prepare BAM files
+### 1. Install FreeBayes
+
+```bash
+conda install -c bioconda freebayes
+
+```
+
+### 2. Prepare BAM files
 
 ```bash
 
@@ -57,7 +64,7 @@ samtools indexed sample bams '**snps.bam**' are available from Snippy run on mul
 
 ```
 
-### 2. Run FreeBayes
+### 3. Run FreeBayes
 
 ```bash
 freebayes -f AL123456_MTB_H37Rv.fasta \
@@ -70,7 +77,7 @@ freebayes -f AL123456_MTB_H37Rv.fasta \
   > multisample.vcf
 ```
 
-Tip: You can generate an index with:
+Generate an index of the reference genome with
 
  ```bash
 samtools faidx AL123456.fasta
