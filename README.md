@@ -68,7 +68,7 @@ freebayes -f reference.fasta \
   > multisample.vcf
 ```
 
-> Tip: You can generate an index with:
+Tip: You can generate an index with:
 
  ```bash
 samtools faidx AL123456.fasta
@@ -89,6 +89,7 @@ conda install -c conda-forge r-data.table r-optparse r-ggplot2 r-mclust "r-base>
 ```
 
 ### 2. Run MixInfect2
+
 ```bash
 Rscript MixInfect2.R \
   --VCFfile /path/to/multisample.vcf \
@@ -98,32 +99,20 @@ Rscript MixInfect2.R \
   --useFilter FALSE
 ```
 
----
-
-## Outputs
+### Outputs
 
 - `output_MixSampleSummary.csv`: Summary of sample classifications.
 - `output_BICvalues.csv`: BIC scores and inferred strain counts.
 
----
 
-```
-
----
-
-## License
+### License
 
 This project is licensed under the MIT License.
 
----
 
-## References
+### References
 - [MixInfect2 GitHub](https://github.com/bensobkowiak/MixInfect2)
 - [Snippy Documentation](https://github.com/tseemann/snippy)
 - [FreeBayes GitHub](https://github.com/freebayes/freebayes)
 
----
-
-## Contact
-Open an issue 
 
