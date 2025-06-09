@@ -94,11 +94,13 @@ conda install -c conda-forge r-data.table r-optparse r-ggplot2 r-mclust "r-base>
 
 ### 2. Run MixInfect2
 
+This script analyzes multi-strain Mycobacterium tuberculosis infections from VCF files using variant clustering and SNP-based heuristics.
+
 ```bash
-Rscript MixInfect2.R \
-  --VCFfile /path/to/multisample.vcf \
+(r-mixinfect):$ Rscript ~/MixInfect2/MixInfect2.R \
+  --VCFfile ~/multisample.vcf \
   --prefix output \
-  --maskFile MaskedRegions.csv \
+  --maskFile ~/MixInfect2/MaskedRegions.csv \
   --minQual 10 \
   --useFilter FALSE
 ```
@@ -106,9 +108,48 @@ Rscript MixInfect2.R \
 ### Outputs
 
 - `output_MixSampleSummary.csv`: Summary of sample classifications.
-- `output_BICvalues.csv`: BIC scores and inferred strain counts.
+- `output_BICvalues.csv`: BIC scores & inferred strain counts.
 
+---
 
+## Loaded R packages
+
+```
+Loading required package: mclust
+Package 'mclust' version 6.1
+Type 'citation("mclust")' for citing this R package in publications.
+Loading required package: stringr
+Loading required package: optparse
+Loading required package: foreach
+Loading required package: doParallel
+Loading required package: iterators
+Loading required package: parallel
+```
+
+---
+
+## Processing summary
+
+```
+Total variants read from VCF:          590,051
+After removing indels:                 576,927
+After applying QUAL > 10:                1,121
+After removing spanning variants (*):    1,121
+After masking regions:                    884
+```
+
+---
+
+## Output summary table
+
+| SampleName | Mix.Non.mix | hSNPs | Total.SNPs | Proportion.hSNPs_totalSNPs | No.strains | Major.strain.proportion |
+|------------|-------------|-------|------------|-----------------------------|------------|--------------------------|
+| TN106985   | Mix         |   459 |        517 | 88.78%                      | 2          | 0.78                     |
+| TN106727   | Mix         |   477 |        505 | 94.46%                      | 2          | 0.71                     |
+| TN106925   | Non-mix     |     6 |        149 | 4.03%                       | 1          | NA                       |
+| TN106439   | Non-mix     |     9 |        252 | 3.57%                       | 1          | NA                       |
+
+---
 ### License
 
 This project is licensed under the MIT License.
