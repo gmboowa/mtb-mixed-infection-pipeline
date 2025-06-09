@@ -41,7 +41,7 @@ TN106439	~/TN106439_1.fastq.gz	~/TN106439_2.fastq.gz
 
 ```bash
 
-./run_snippy_mtb.sh -i ~/sample.list.txt -r ~/MTB_H37Rv.fasta -t 8
+./run_snippy_mtb.sh -i ~/sample.list.txt -r ~/AL123456_MTB_H37Rv.fasta -t 8
 
 ```
 
@@ -88,7 +88,9 @@ conda env create -f r-mixinfect.yaml
 conda activate r-mixinfect
 
 # If needed
+
 conda install -c conda-forge r-data.table r-optparse r-ggplot2 r-mclust "r-base>=4.0" "icu=73.2"
+
 ```
 
 ### 2. Run MixInfect2
