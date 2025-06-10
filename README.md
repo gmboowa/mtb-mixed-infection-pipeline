@@ -109,7 +109,7 @@ This script analyzes multi-strain *Mycobacterium tuberculosis* infections from V
   --useFilter FALSE
 ```
 
-### MixInfect2 outputs
+### 3. MixInfect2 outputs
 
 - `output_MixSampleSummary.csv`: Summary of sample classifications.
 - `output_BICvalues.csv`: BIC scores & inferred strain counts.
@@ -146,12 +146,12 @@ After masking regions:                    884
 
 ## Output summary table
 
-| SampleName | Mix.Non.mix | hSNPs | Total.SNPs | Proportion.hSNPs_totalSNPs | No.strains | Major.strain.proportion |
-|------------|-------------|-------|------------|-----------------------------|------------|--------------------------|
-| TN106985   | Mix         |   459 |        517 | 88.78%                      | 2          | 0.78                     |
-| TN106727   | Mix         |   477 |        505 | 94.46%                      | 2          | 0.71                     |
-| TN106925   | Non-mix     |     6 |        149 | 4.03%                       | 1          | NA                       |
-| TN106439   | Non-mix     |     9 |        252 | 3.57%                       | 1          | NA                       |
+| SampleName | Mix.Non.mix | hSNPs | Total.SNPs | % hSNPs_totalSNPs | No.strains | Major.strain.prop |
+|------------|-------------|-------|------------|-------------------|------------|-------------------|
+| TN106985   |    Mix      |   459 |    517     |     88.78%        |      2     |      0.78         |
+| TN106727   |    Mix      |   477 |    505     |     94.46%        |      2     |      0.71         |
+| TN106925   |  Non-mix    |    6  |    149     |     4.03%         |      1     |      NA           |
+| TN106439   |  Non-mix    |    9  |    252     |     3.57%         |      1     |      NA           |
 
 ---
 ### License
